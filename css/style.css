@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e8f1f2;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 5px 5px 15px 5px #999;
+}
+
+header {
+  background-color: #13293d;
+  text-align: center;
+  color: #e8f1f2;
+  padding: 10px;
+}
+
+.title {
+  font-size: 26px;
+}
+
+section {
+  padding: 20px;
+  background-image: url(../imagens/palestra.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.formContainer {
+  max-width: 230px;
+  background-color: #e8f1f2b2;
+  padding: 20px;
+  float: right;
+}
+
+h2 {
+  font-size: 16px;
+  text-align: center;
+}
+
+.mb {
+  margin-bottom: 15px;
+}
+
+input,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+input[type='submit'] {
+  color: white;
+  background-color: #1b98e0;
+  font-weight: bold;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  background-image: url(../imagens/arrow.jpg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  padding: 20px 120px;
+}
+.box {
+  float: left;
+}
+
+.picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #13293d;
+  padding: 40px;
+  text-align: center;
+}
+
+.description {
+  display: inline-block;
+  text-align: left;
+  color: white;
+  margin-left: 40px;
+}
+
+.description p,
+.description h3 {
+  text-align: justify;
+}
+
+.description h3 {
+  font-size: 24px;
+}
+
+.text {
+  margin-top: 20px;
+}
+
+.text2 {
+  margin-top: 10px;
+}
+
+hr {
+  margin-top: 8px;
+  width: 46%;
+  height: 3px;
+  border: none;
+  background-color: #e8f1f2;
+}
+
+@media screen and (max-width: 770px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  .formContainer {
+    margin: auto;
+  }
+  .flex {
+    flex-direction: column;
+    padding: 0%;
+  }
+  .picture {
+    margin-bottom: 20px;
+  }
+}
